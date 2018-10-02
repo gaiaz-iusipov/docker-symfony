@@ -1,0 +1,6 @@
+/data/*
+!/data/.gitkeep
+/logs/*
+!/logs/php/.gitkeep
+!/logs/nginx/.gitkeep
+.env
