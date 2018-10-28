@@ -39,7 +39,7 @@ RUN curl -sSo /usr/local/bin/cachetool https://gordalina.github.io/cachetool/dow
     chmod +x /usr/local/bin/cachetool
 
 # Installing PHP CS Fixer
-RUN curl -sSo /usr/local/bin/php-cs-fixer http://get.sensiolabs.org/php-cs-fixer.phar && \
+RUN curl -sSo /usr/local/bin/php-cs-fixer https://get.sensiolabs.org/php-cs-fixer.phar && \
     chmod +x /usr/local/bin/php-cs-fixer
 
 # fixuid
