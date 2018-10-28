@@ -22,7 +22,7 @@ RUN set -xe && \
         apcu \
         xdebug \
     ; do \
-        pecl install $key && \
+        pecl -q install $key && \
         docker-php-ext-enable $key \
     ; done && \
     apk del .build-deps
