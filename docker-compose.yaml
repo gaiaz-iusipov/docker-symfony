@@ -1,10 +1,10 @@
-version: '3'
+version: '3.4'
 
 services:
   php:
-    image: dev
     build:
       context: ./php
+      target: dev
     user: ${FIXUID:-1000}:${FIXGID:-1000}
     working_dir: /app
     volumes:
