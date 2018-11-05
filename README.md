@@ -1,8 +1,8 @@
 # docker-symfony
 
-[![GitHub](https://img.shields.io/github/license/gaiaz-iusipov/docker-symfony.svg)](https://github.com/gaiaz-iusipov/docker-symfony#license)
+[![GitHub](https://img.shields.io/github/license/gaiaz-iusipov/docker-symfony.svg)](https://github.com/gaiaz-iusipov/docker-symfony-compose#license)
 
-:whale: A [Docker](https://www.docker.com/) multicontainer with [Nginx](https://hub.docker.com/_/nginx/), [PHP 7.2](https://hub.docker.com/_/php/), [MySQL 5.7](https://hub.docker.com/_/mysql/) for the [Symfony 4](https://symfony.com/4) web framework
+:whale: A [Docker](https://www.docker.com/) multicontainer with [Nginx](https://hub.docker.com/_/nginx/), [PHP 7.3](https://hub.docker.com/_/php/), [MySQL 5.7](https://hub.docker.com/_/mysql/) for the [Symfony 4](https://symfony.com/4) web framework
 
 ## Features
 
@@ -24,17 +24,17 @@ docker run --rm -it -v $PWD:/app -u $(id -u):$(id -g) composer create-project sy
 1. Clone this repository
 
     ```bash
-    git clone https://github.com/gaiaz-iusipov/docker-symfony.git
+    git clone https://github.com/gaiaz-iusipov/docker-symfony-compose.git
     ```
 
 2. Create a `.env` from the `.env.dist` file
 
     ```bash
-    cd docker-symfony
+    cd docker-symfony-compose
     cp .env.dist .env
     ```
 
-3. Adapt `.env` according to your symfony application
+3. Adapt `.env` according to your Symfony application
 
 4. Build and run the containers
 
@@ -46,7 +46,7 @@ docker run --rm -it -v $PWD:/app -u $(id -u):$(id -g) composer create-project sy
 5. Install dependencies and create database schema
 
     ```bash
-    docker-compose exec php
+    docker-compose exec php sh
     composer install
     bin/console doctrine:schema:create
     ```
@@ -56,7 +56,7 @@ docker run --rm -it -v $PWD:/app -u $(id -u):$(id -g) composer create-project sy
 1. Run the containers
 
     ```bash
-    docker-compose up -d --build
+    docker-compose up -d
     ```
 
 2. Open [http://localhost](http://localhost) :tada:
