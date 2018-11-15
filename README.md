@@ -11,6 +11,14 @@
 - [Xdebug](https://xdebug.org/)
 - [fixuid](https://github.com/boxboat/fixuid)
 
+## Installing the Symfony Framework
+
+Create your new project by running:
+
+```bash
+docker run --rm -it -v $PWD:/app -u $(id -u):$(id -g) composer create-project symfony/skeleton my-project
+```
+
 ## Installation
 
 1. Clone this repository
