@@ -10,12 +10,14 @@ services:
     volumes:
       - ${APP_PATH}:/app:rw
       - ./logs/php:/app/var/log:rw
+      - $SSH_AUTH_SOCK:/ssh-auth.sock:ro
     depends_on:
       - mysql
     environment:
       TZ: ${TZ:-UTC}
       DATABASE_URL: mysql://${MYSQL_USER:-app}:${MYSQL_PASSWORD:-app}@mysql:3306/${MYSQL_DATABASE:-app}
       PHP_IDE_CONFIG: serverName=${IDE_SERVER_NAME:-docker}
+      SSH_AUTH_SOCK: /ssh-auth.sock
 
   nginx:
     build: ./nginx
