@@ -2,7 +2,7 @@
 
 [![GitHub](https://img.shields.io/github/license/gaiaz-iusipov/docker-symfony.svg)](https://github.com/gaiaz-iusipov/docker-symfony#license)
 
-:whale: A [Docker](https://www.docker.com/) multicontainer with Nginx, PHP 7.2, MySQL 5.7 for the [Symfony 4](https://symfony.com/4) web framework
+:whale: A [Docker](https://www.docker.com/) multicontainer with [Nginx](https://hub.docker.com/_/nginx/), [PHP 7.2](https://hub.docker.com/_/php/), [MySQL 5.7](https://hub.docker.com/_/mysql/) for the [Symfony 4](https://symfony.com/4) web framework
 
 ## Features
 
